@@ -48,10 +48,10 @@ The website includes:
    ![Schedule_Page_3](images/Schedule_Page_3.png)
 
 ### 6. Cart
-   1) When the cart is empty:
+   i) When the cart is empty:
    ![Cart_Page_1](images/Cart_Page_1.png)
 
-   2) When the cart is not empty:
+   ii) When the cart is not empty:
    ![Cart_Page_2](images/Cart_Page_2.png)
       - If a user wants to remove a specific item from the cart, they can simply click on the remove button, which is ‘-’, and the item will be automatically removed from the cart. At the same time, the total cost for the cart will be updated accordingly.
       ![Cart_Page_3](images/Cart_Page_3.png)
