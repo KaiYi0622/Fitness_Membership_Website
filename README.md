@@ -23,6 +23,19 @@ The website includes:
 ![Flow_Chart](/images/Flow_Chart.png)
 
 ## Website's Overview
+### Have A Glance on Our Main  Pages:
+![Main_Page_1](images/Main_Page_1.png)
+![Main_Page_2](images/Main_Page_2.png)
+![Main_Page_3](images/Main_Page_3.png)
+![Main_Page_4](images/Main_Page_4.png)
+
+### 1. About Us
+   - Is a glance for user to get to know about the fitness club.
+   ![About_Us_1](images/About_Us_1.png)
+   ![About_Us_2](images/About_Us_2.png)
+   ![About_Us_3](images/About_Us_3.png)
+   ![About_Us_4](images/About_Us_4.png)
+
 ### 2. Classes
    - There are six different types of classes (Indoor Cycling, Boxing, Pilates, Yoga, Zumbaand Kids) are displayed.
    ![Class_Page](images/Class_Page.png)
@@ -31,7 +44,9 @@ The website includes:
    - After clicking on the ‘Book A Bike’ button, the user will be taken into the ‘Schedule’ page.
    ![Schedule_Page_1](images/Schedule_Page_1.png)
 
-3. Instructors
+### 3. Instructors
+   - To introduce our instructors to our users.
+   ![Instructor_Page_1](images/Instructor_Page_1.png)
    
 ### 4. Packages
    - Three awesome packages are offered for those who are eager to achieve their fitness goals as well enjoy the exclusive amenities provided by our gym. 
@@ -60,5 +75,14 @@ The website includes:
       - After confirmation of payment details, the user can click on the ‘Confirm Pay’ button located in the bottom right corner, and a successful checkout message will appear to notify the user that he has successfully done the payment. Then, the user will be redirected back to the ‘Schedule page’. In addition, the cart of the user will be cleared.
       ![Cart_Page_5](images/Cart_Page_5.png)
 
+### 7. Contact Us
+![ContactUs_Page](images/ContactUs_Page.png)
+
+### 8. Login/Sign Up
+- Login In
+![SignIn_Page_1](images/SignIn_Page_1.png)
+
+- Sign Up
+![SignUp_Page_1](images/SignUp_Page_1.png)
 
 Thanks for watching! :relaxed:
