@@ -1,0 +1,1328 @@
+/*header.php*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 10%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+	background-color: rgb(0, 0, 0, 0.2);
+	
+	font-family: 'Poppins', sans-serif;	
+}
+
+.logo{
+    font-size: 1.3em;
+    color:#fff;
+    user-select: none;
+	padding-left: 20px;
+	background-color: transparent;
+}
+
+.logo:hover {
+	color: #eeee; /*#becefa;
+	text-shadow:  2px 2px 4px #000000;*/
+	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.dropBtnHeader {
+  background-color: transparent;
+  color: white;
+  padding-right: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dropdownHeader {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-contentHeader {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  /*border: solid 3px red;*/
+  padding-left: 1px;
+  margin-left: 0;
+  text-align: center;
+  left: -30%;  
+}
+
+.dropdown-contentHeader a{
+  color: black;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+.dropdown-contentHeader a:hover {
+	color: #0472c7;
+	font-weight: bold;
+
+}
+
+.dropdownHeader:hover .dropdown-contentHeader {display: block;}
+
+.dropdownHeader:hover .dropBtnHeader{
+    color: #5656d1; /*#3131d6; /* #1A1AFF;  #ce2a2a */
+    border-radius: 100px; 
+	font-weight: bold;
+}
+
+a {	text-decoration: none;}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    /*color: #fff;*/
+	font-weight: bold;
+ }
+ 
+.aHeader {
+	 color: #fff;
+	 padding-bottom: 5px;
+	 padding-left: 10px;
+	 margin-right: 10px;
+ }
+ 
+.navigation a:hover {color:#5656d1;}
+
+.navigation a:not(.btnlogin):not(.subHeader)::after{
+	content:'';
+	position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: 90%;
+    height: 3px;
+    background: #2ab3ce;  /* #ce2a2a */
+    border-radius: 100px; 
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s;
+ } 
+
+.navigation a:not(.btnlogin):not(.subHeader):hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}    
+
+/*.dropdownHeader a*/
+.dropdownHeader .subHeader:hover {color:#11b1d1;}
+
+.dropdownHeader .subHeader::after{
+	content:'';
+	position: absolute;
+    left: 27px;
+    bottom: 0px;
+    width: 65%;
+    height: 3px;
+    background: #2ab3ce;  /* #ce2a2a */
+    border-radius: 100px; 
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s;
+ } 
+
+.dropdownHeader .subHeader:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}  
+  
+.navigation .btnlogin{
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #2ab3ce; /*#c4103d;*/
+    outline: none;
+    border-radius: 70px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+	margin-right: 20px;
+    transition: .5s;
+	/*margin: 20px;*/
+	padding: 5px 9px 5px 9px;
+	
+}
+
+.navigation .btnlogin:hover{
+    background: #5ecbe0; /*#2ab3ce; /*#c4103d;*/
+    color:#162938;
+}
+
+
+
+
+/*footer.php*/
+.footerBox {
+	border-top: 8px solid rgba(0, 51, 204, 0.8);
+	box-shadow: inset 0 -25px 20px -25px rgba(0, 0, 0, 0.8);
+}
+
+.footerRow {
+	display:flex;
+	background-color:rgba(224,224,224, 0.5);
+	padding-top: 40px;
+}
+
+.footerRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footerHref {
+	 text-decoration:none;
+	 color:	rgb(105,105,105);
+	 ppadding-left:18px;
+	 line-height: 1.4;
+ }
+ 
+.footerHref:hover {color:#5656d1;}
+
+.footerColumn {
+	flex: 1;
+	height: 100%;
+	width: min(20vw/4), 100%);
+	margin-left: 40px;
+	
+	font-size:15px;
+	font-family: Georgia, serif;
+}
+
+.footerLogo {
+	width:70%;
+	height:15%;
+	padding: 0px 20px 0px 18px;
+	margin-left: 40px;
+	margin-top: 40px;
+	border: solid 1px transparent;
+	border-radius: 80px;
+	box-shadow: 1px 5px 40px #999999;
+}
+
+.footerH {
+	font-size: 17px;
+	margin-bottom: 30px;
+}
+
+.footerP {
+	color:	rgb(105,105,105);
+	ppadding-left:18px;
+	cursor:pointer;
+	line-height: 1.4;
+}
+
+.footerH:not(.footerName), .footerP:not(.footerContact), .footerHref {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.footerName {
+	color: rgb(26, 26, 255);
+	font-size: 27px;
+	margin-left: 40px;
+	margin-top: 35px;
+}
+
+.socialMedia{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	
+	font-size: 25px;
+	background-color:rgba(224,224,224, 0.5);
+}
+
+.socialMediaHref {
+	color: rgb(26, 26, 255);
+	text-align:center;
+	padding-left:10px;
+	padding-right:40px;
+}
+
+.footerCopyright {
+	background-color: rgba(0, 0, 0, 0);
+	font-family: Papyrus, Fantasy;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	/*padding-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;*/
+	margin: 20px;
+}
+
+.mainIcon{
+	margin-right: 70px;
+}
+
+
+
+
+/*homepage_index.php*/	
+.homeSection1 {
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),transparent), 
+	url('/TheAthleteHub/images/gym1.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 5px 0px;
+	position: relative;
+}
+	
+#homeSection1H1 {
+	padding-top: 12%;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 160px;
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+	
+.homeSection2 {
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.1),transparent), 
+	url("../images/gym2.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 5px 0px;
+	position: relative;
+}
+	
+#homeSection1H2 {
+	margin-top: 0%;
+	font-size: 3.5vw;
+	color: white;
+	text-shadow: 2px 2px 6px #000000;
+	margin-left: -10px;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+	
+.homeSection3 {
+	padding-top: 1px;
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,10,50,0.8),transparent), 
+	url('/TheAthleteHub/images/gym3.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 5px 0px;
+	position: relative;
+}
+	
+#homeSection1H3{
+	padding-top: 2%;
+	font-size: 3vw;
+	color: white;
+	text-shadow:  2px 2px 4px #000000;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+
+.paragraph3 {
+	color: white;
+	font-weight: bold;
+	line-height: 1.3;
+	text-shadow:  2px 2px 4px #000000;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+	
+.homeSection4 {
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.2),transparent),
+	url('/TheAthleteHub/images/gym4.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 5px 0px;
+	position: relative;
+}
+	
+#homeSection1H4{
+	margin-top: -2%;
+	color: #121212;
+	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+	font-size: 3vw;
+	margin-left: -10px;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+
+.paragraph {
+	color: #121212;
+	text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -1px 5px rgba(255,255,255,0.3);
+	
+	font-weight: bold;
+	line-height: 1.5;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+.centerBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.alignLeft{
+	padding-top: 10%;
+	padding-left: 14%;
+}
+
+
+.alignRight {
+	padding-top: 5%;
+	padding-left: 50%;
+	margin-right: 10px;
+}
+	
+.homeHref1 {
+	background-color:rgb(26, 26, 255);
+	color: white;
+	font-family: Serif, Garamond;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+		
+	text-align:center;
+	text-decoration: none;
+		
+	padding: 10px 40px;
+	border: 1px;
+	border-radius: 20px;
+}
+
+.homeHref1:hover, .homeHref1:active{
+	background-color: rgb(0, 26, 102);
+	transition: .5s;
+}
+	
+.homeHref2 {
+	background-color:white;
+	color: rgb(26, 26, 255);
+	font-family: Serif, Garamond;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+		
+	text-align:center;
+	text-decoration: none;
+		
+	padding: 10px 40px;
+	border: 1px solid rgb(26, 26, 255);
+	border-radius: 20px;
+}
+
+.homeHref2:hover, .homeHref2:active{
+	background-color: rgb(26, 26, 2555);
+	color: white;
+	transition: .5s;
+}
+
+
+.homeHref1 , .homeHref2 {
+	margin-right: 15px;
+}
+
+
+
+/* Log in Sign up form */
+.signInBody {
+	padding-top: 8%;
+	border: solid 1px transparent;
+	max-width: 100%;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.1),transparent), 
+	url('/TheAthleteHub/images/login2.jpg');
+	background-position: center;
+	background-size: cover;	
+	position: relative;
+}
+
+.logreg-box{
+	margin-top: 10px;
+	margin: auto;
+	/*position:relative;*/
+	width: 460px;
+	height: 460px;
+	background: white; 
+	border: 2px solid #323c94; 
+	border-radius: 20px;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow:hidden;
+	/*justify-content: center;*/
+	transition: transform .5s ease, height .2s ease;
+	margin-bottom: 10.5%;
+}
+
+.form-box h2{
+	 font-size: 5vh;
+	 color: #1b1e96;
+
+}
+
+.form-box {
+	margin: 25px 20px;
+}
+
+/*.logreg-box .form-box{
+width: 100%;
+padding: 50%;
+}*/
+
+.form-box .input-box{
+  /*width: 400px;
+  height: 50px;*/
+  border-bottom: 2px solid #323c94;
+  margin: 15px 0;
+}
+
+.input-box .icon{
+	color: #1b1e96;
+}
+.input-box input{
+	  width: 100%;
+	  height: 50%;
+	  border: none;
+	  outline: none;
+	  background: transparent; 
+	  padding: 0 35px 10px 5px;
+	  color: black; 
+}
+
+input::placeholder{
+	color: #7a7cd6;
+}
+
+input:focus::placeholder {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+input:not(:focus)::placeholder {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+.remember-forgot{
+  font-size: 14.5px;
+  font-weight: 500;
+  margin: -8px 0 15px;
+  display: flex;
+  color: black; ##1b1e96;
+}
+.remember-forgot label input{
+  accent-color: #1b1e96;
+}
+
+.remember-forgot a {
+  color:#ce2a2a;
+  text-decoration: none;
+  font-weight: 600;
+}
+.remember-forgot a:hover{
+	color: #ab0303;
+  text-decoration: underline;
+}
+.remember-forgot .linker{
+	margin-left: 150px;
+	margin-top: 5px;
+}
+
+.form-submit-btn{
+	width: 400px;
+	height: 45px;
+	cursor: pointer;
+	background-color:white;
+	color: rgb(26, 26, 255);
+	font-family: Serif, Garamond;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+		
+	text-align:center;
+	text-decoration: none;
+		
+	padding: 10px 40px;
+	border: 1px solid rgb(26, 26, 255);
+	border-radius: 20px;
+}
+.form-submit-btn:hover, .form-submit-btn:active{
+	background-color: rgb(26, 26, 2555);
+	color: white;
+	transition: .3s;
+}
+
+.login-register{
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-top: 25px;
+  color: black; 
+}
+
+.login-register .register-link{
+  color: #ce2a2a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-register .register-link:hover{
+	color: #ab0303;
+  text-decoration: underline;
+}
+
+.login-register .login-link{
+  color: #ce2a2a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register .login-link:hover{
+	color: #ab0303;
+  text-decoration: underline;
+}
+
+.logreg-box .form-box.register{
+  display: absolute;
+  transform: translateX(700px);
+  margin-top: -5px;
+  margin-left: 10px;
+  transition: transform .5s ease;
+  transition-delay: 0s;
+}
+
+.logreg-box.active .form-box.register{
+  transform: translateX(-430px);
+  transition-delay: 0.375s;
+}
+.logreg-box .form-box.login{
+  transform: translateX(0px);
+  margin-left: 30px;
+  margin-top: -30px;
+  transition: transform .5s ease;
+  transition-delay: 0.375s;
+}
+
+.logreg-box.active .form-box.login{
+	color:transparent;
+  transform: translateX(1000px);
+  transition-delay: 0s;
+}
+
+
+
+/* class Type */
+.classBody {
+	border: solid 1px transparent;
+	max-width: 100%;
+	width: 100%;
+	height: 140vh;
+	background-image: linear-gradient(rgba(0,0,0,0.1),transparent), 
+	url('/TheAthleteHub/images/gym5.jpg');
+	background-position: center;
+	background-size: cover;	
+	position: relative;
+}
+	
+.classTypeHead {
+	color: rgb(0, 0, 153);
+	font-size:40px;
+	font-family: Garamond, serif;
+	font-weight: 1000;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.classTypes {
+	position: relative;
+	/*margin-top: 100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.buttonClass {
+	position: relative;
+	border: none;
+	color: white;
+	background-color: black; 
+	padding: 120px 100px;
+	margin: 30px 30px;
+	display: inline-block;
+	/*font-size: 16px;*/
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 4vh;
+	border-radius: 20px;
+	width: 330px;
+	height: 300px;
+	top: 30px;
+	transition-duration: 0.4s;
+	cursor: pointer;		
+}
+
+.buttonClass:hover {
+	color: #abb0ab; /*#a1a5ad;*/
+	transform: scale(1.1);
+}
+
+#cycling {
+	background-image: linear-gradient(rgba(2,1,1,0.8),transparent), 
+	url("/TheAthleteHub/images/cycling.jpg"); 
+	background-position: center center; 
+	background-size: 100%; 
+}
+
+#boxing {
+	background-image: linear-gradient(rgba(0.5,0,0,0.5),transparent), 
+	url("/TheAthleteHub/images/boxing.jpg"); 
+	background-position: center center; 
+	background-size: 100%; 
+}
+
+#pilates {
+	background-image: linear-gradient(rgba(5,1,1,0.7),transparent), 
+	url("/TheAthleteHub/images/pilates.jpg");
+	background-position: center center; 
+	background-size: 100% ; 
+}
+
+#yoga {
+	background-image: linear-gradient(rgba(5,1,1,0.8),transparent), 
+	url("/TheAthleteHub/images/yoga.jpg");
+	background-position: center center; 
+	background-size: 100%; 
+}
+
+#zumba {
+	background-image: linear-gradient(rgba(5,1,1,0.7),transparent), 
+	url("/TheAthleteHub/images/zumba.jpg");
+	background-position: center center; 
+	background-size: 100% ; 
+}
+
+#kids {
+	background-image: linear-gradient(rgba(5,1,1,0.6),transparent), 
+	url("/TheAthleteHub/images/kids.jpg");
+	background-position: center center; 
+	background-size: 100%; 
+}
+
+
+
+/* Filter Drop Down*/
+.filter {
+	margin-left: 150px;
+}
+
+.dropbtn {
+	background-color: white;
+	color: black;
+	padding: 5px 20px;
+	padding-left: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	font-family: Garamond, serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.dropbtn::after {
+	content: '\25BE'; 			/* use the Unicode code for the down arrow symbol */
+	position: absolute;
+	top: 51%; 					/* align the arrow vertically centered */
+	right: -52px; 				/* position the arrow on the right side of the button */
+	transform: translateY(-47%);/* adjust the arrow position vertically */
+	font-size: 1.5em;
+	padding-right: 55px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: rgb(26, 26, 255);
+  background-color: #edf0f5;
+  border-radius: 10px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white; 
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 6px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {background-color: #e6ebf7;}
+
+.show {display: block;}
+
+
+
+/*packages_index.php*/
+.packageBox{
+	max-width: 100%;
+	margin: 0px;
+	padding: 100px 50px;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent), 
+    url('/TheAthleteHub/images/package.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.packageBoxRow {
+	display:flex;
+	margin-bottom:50px;	
+}
+
+.packageBoxCol {
+	flex: 1;
+	height: 100%;
+	width: min(20vw/2), 100%);
+	margin: 0px 20px;
+
+	align-items: center;	 
+	justify-content: center;	
+}
+
+.package {
+	background-color: #fefefe;
+	border: 3px solid rgb(26, 26, 255);
+	border-radius: 60px;
+}
+
+.packageRow1 {
+	text-align:center;
+	width: min(20vw), 100%);	
+	padding: 20px;
+		
+	border-collapse:collapse;
+	border-bottom: 3px solid rgba(26, 26, 255);
+}
+
+.packageRow2 {
+	display:flex;
+}
+
+.packageRow2:after {
+	content: "";
+	display:table;
+	clear:both;
+}
+
+.packageCol {
+	flex: 1;
+	height: 100%;
+	width: min(20vw/2), 100%);
+	padding: 20px;
+		
+	align-items: center;	 
+	justify-content: center;	
+}	
+
+.packageH0 {
+	color: rgb(0, 0, 153);
+	font-size: 40px;
+	font-family: Garamond, serif;
+	margin-left: 40%;
+	margin-bottom: 0;
+	padding:100px 0px 0px 0px;
+}
+
+.packageH1 {
+	color: rgb(0, 0, 153);
+	font-size: 20px;
+	font-family: Monaco, Monospace;
+	text-align:center;
+	letter-spacing: 0.5px;
+	margin:0px;
+	padding-top: 20px;
+}
+
+.packageH2 {
+	font-size: 15px;
+	font-family: Garamond, Serif;
+	text-align:center;
+	letter-spacing: 0.5px;
+	margin:0px;
+	padding-top: 25px;
+}
+
+.packageP {
+	font-size: 15px;
+	font-family: "Courier New", Monospace;
+	text-align:center;
+	letter-spacing: 0.5px;
+	
+	margin:0px;
+	padding-top: 30px;
+}
+
+.packBookBtn {
+	background-color: rgb(26, 26, 255);
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	font-family: Garamond, Serif;
+			
+	position: center;
+	display: inline-block;
+	cursor: pointer;
+	
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 15px 30px;
+	border-radius:20px;
+	border:none;
+}
+
+.packBookBtn:hover, .packBookBtn:active{
+	background-color: rgb(0, 26, 102);
+}
+
+.packModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 300px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0,0.3);
+}
+
+.packModal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 15%;
+	text-align:left;
+	border-radius:40px;
+}
+
+
+
+
+/*schedule_index.php*/
+.scheduleHead {
+	background-color:white;
+	color: rgb(0, 0, 153);
+	font-size:30px;
+	font-family: Garamond, serif;
+	font-weight: bold;
+	
+	padding:100px 0px 30px 150px;
+}
+
+.scheduleTable {
+	margin-bottom:	100px;
+}
+
+table{
+	border-collapse: collapse;
+	border: none;
+	margin: 50px 150px; 
+	width: 80%;
+}
+	
+th { 
+	background-color:white;
+	color: rgb(0, 0, 153);
+	font-size:20px;
+			
+	font-family: Garamond, serif;
+	font-weight: bold;
+			
+	padding:20px;
+	text-align: center;	
+	border-collapse: collapse;
+	border-bottom: 5px solid rgb(91, 91, 215);
+}
+
+.hiddenSchedule {
+	color:rgb(173, 173, 133);
+}
+		
+th, td{
+	padding: 10px;
+	text-align: center;
+}
+		
+tr:nth-child(odd) {
+	background-color: white;
+}
+		
+tr:nth-child(even) {
+	background-color: rgb(230, 230, 255);
+}
+		
+/* Booking Model */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.successModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 300px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0,0.3);
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+	height: 70%;
+	text-align:left;
+	border-radius:40px;
+}
+		
+.modalP1 {
+	font-size: 30px;
+	color: black;
+			
+	padding-bottom: 20px;
+	border-collapse:collapse;
+	border-bottom:5px solid rgb(91, 91, 215);
+}
+		
+.modalP2{
+	font-size: 20px;
+}
+
+.successModal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 15%;
+	text-align:left;
+	border-radius:40px;
+}
+	
+
+/* The Close Button */
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+		
+/*Time Button*/
+.timeBtn {
+	background-color:rgb(255,255,255,0);
+	color: black;
+	font-family: Garamond, serif;
+	font-size: 17px;
+		
+	border:none;
+	cursor: pointer;
+}
+
+.timeBtnUnavailable {
+	background-color:rgb(255,255,255,0);
+	color: rgb(173, 173, 133);
+	font-family: Garamond, serif;
+	font-size: 17px;
+		
+	border:none;
+	cursor: default;
+}
+		
+.timeBtn:hover {
+	color: rgb(91, 91, 215);
+}
+		
+/*Book Button*/
+.scheduleBtn {
+	background-color: rgb(26, 26, 255);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+			
+	float:right;
+	display: inline-block;
+	cursor: pointer;
+			
+	padding: 15px 40px;
+	border-radius:20px;
+	border:none;			
+}
+
+.scheduleBtn:hover, .scheduleBtn:active{
+	background-color: rgb(0, 26, 102);
+}
+
+
+
+/*cart_index.php*/ 
+.cartBox {
+	margin-bottom:200px;
+}
+ 
+.cartHead {
+	background-color:white;
+	color: rgb(0, 0, 153);
+	font-size:30px;
+	font-family: Garamond, serif;
+	font-weight: bold;
+	
+	padding:100px 0px 0px 150px;
+}
+
+/*table same style*/
+
+.deleteBtn {
+	background-color: white;
+	color: rgb(26, 26, 255);
+	font-size: 20px;
+	text-align: center;
+			
+	position:center;
+	display: inline-block;
+	cursor: pointer;
+			
+	padding: 2px 8px;
+	border-radius:5px;
+	border:1px solid rgb(26, 26, 255);
+}
+
+.deleteBtn:hover, .deleteBtn:active{
+	background-color: rgb(26, 26, 2555, 0.2);
+}
+
+.deleteModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 250px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.deleteModal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 30px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 20%;
+	text-align:left;
+	border-radius:40px;
+
+	font-size:20px;
+}
+
+.cartPayBtn {
+	background-color:rgb(26, 26, 255);
+	color: white;
+	font-family: Serif, Garamond;
+	font-size: 20px;
+	font-weight: bold;
+	text-align:center;
+	text-decoration: none;
+	float: right;
+	
+	margin-right:150px;	
+	padding: 15px 40px;
+	border-radius: 20px;
+}
+
+.cartPayBtn:hover, .cartPayBtn:active{
+	background-color: rgb(0, 26, 102);
+}
+
+.cartEmptyDiv {
+	background-color:white;
+	color: rgb(0, 0, 153);
+	font-size:30px;
+	font-family: Garamond, serif;
+	font-weight: bold;
+	
+	margin:50px 150px 200px 150px;
+	padding:20px 50px 100px 50px;
+	
+	border-collapse: collapse;
+	border: 3px groove rgb(26, 26, 255);
+	border-radius: 10px;
+}
+
+.returnSchedule{
+	background-color:rgb(26, 26, 255);
+	color: white;
+	font-family: Serif, Garamond;
+	font-size: 20px;
+	font-weight: bold;
+		
+	text-align:center;
+	text-decoration: none;
+	
+	float:left;	
+	margin-top: 40px;
+	padding: 15px 40px;
+	border: 1px;
+	border-radius: 20px;
+}	
+
+.returnSchedule:hover, .returnSchedule:active{
+	background-color: rgb(0, 26, 102);
+}
+
+/*cart_pay.php*/
+.payBox {
+	margin-bottom:200px;
+}
+
+.payDetails {
+	background-color:white;
+	color: rgb(0, 0, 153);
+	font-size:20px;
+	font-family: Garamond, serif;
+	font-weight: bold;
+	
+	margin:50px 150px 5px 150px;
+	padding:20px 0px 20px 20px;
+	
+	border-collapse: collapse;
+	border: 3px dashed rgb(26, 26, 255);
+	border-radius: 10px;
+}
+
+.payP1 {
+	font-size:25px;
+	padding-bottom: 10px;
+	width: 20%;
+	border-bottom: 3px solid rgb(26, 26, 255);
+}
+
+.payTableCaption{
+	color: rgb(0, 0, 153);
+	font-weight:bold;
+	float: left;
+}
+
+.payBtn {
+	background-color: rgb(26, 26, 255);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-family: Serif, Garamond;
+			
+	float:right;
+	display: inline-block;
+	cursor: pointer;
+	
+	margin-right: 150px;
+	padding: 15px 40px;
+	border-radius:20px;
+	border:none;
+}
+
+.payBtn:hover, .payBtn:active{
+	background-color: rgb(0, 26, 102);
+}
+
+
+
+
+
+
